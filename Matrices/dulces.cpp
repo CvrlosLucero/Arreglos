@@ -18,14 +18,14 @@ int main(){
     for(i=0; i<filaDulces; i++){
         for(j=0; j<columnaDulces; j++){
             cout<<"Ingrese el nombre del producto: ";
-            cin>>nombreProducto;
-            dulces[i][j] = dulces[i][j]+nombreProducto;
+                cin>>nombreProducto;
             cout<<"Ingrese el valor del producto: ";
-            cin>>valorProducto;
-            dulces[i][j] = dulces[i][j]+valorProducto;
-            cout<<"Posición del producto: "<<"("<<i<<","<<j+1<<")"<<endl;
-        }
+                cin>>valorProducto;
+            dulces[i][j] = "Nombre: " + nombreProducto + " Precio: " + valorProducto;
 
+            cout<<"Posición del producto: "<<"("<<i<<","<<j+1<<")"<<endl;
+            cout<<endl;
+        }
     }
 
     //Imprimir segundo vector
