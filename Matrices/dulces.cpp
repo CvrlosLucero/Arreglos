@@ -3,18 +3,20 @@
 using namespace std;
 
 int main(){
-
+    //declarar variables
     int i, j, filaDulces, columnaDulces;
     string nombreProducto, valorProducto;
 
+    //pedir tamaño de la máquina de dulces
     cout<<"Ingrese el tamaño de su máquina de dulces en fila: ";
     cin>>filaDulces;
-    cout<<"Ingrese el tamaño de su máquina de dulces en columna ";
+    cout<<"Ingrese el tamaño de su máquina de dulces en columna: ";
     cin>>columnaDulces;
 
+    //declarar vector
     string dulces[filaDulces][columnaDulces];
 
-    //Creación del segundo vector
+    //llenar vector
     for(i=0; i<filaDulces; i++){
         for(j=0; j<columnaDulces; j++){
             cout<<"Ingrese el nombre del producto: ";
@@ -28,7 +30,7 @@ int main(){
         }
     }
 
-    //Imprimir segundo vector
+    //Imprimir vector
     for(i=0; i<filaDulces; i++){
         for(j=0; j<columnaDulces; j++){
             cout<<dulces[i][j]<<" ";
