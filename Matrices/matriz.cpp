@@ -4,10 +4,11 @@ using namespace std;
 
 int main(){
 
+    //declarar variables
     int i, j, filaDulces, columnaDulces;
     string nombreProducto, valorProducto;
 
-    //Primer vector
+    //Vector de calculadora
     string calc[5][3]={
         {"1","2","3"},
         {"4","5","6"},
@@ -15,12 +16,13 @@ int main(){
         {"+","0","-"},
         {"*","=","√"}};
 
-        for(i=0; i<5; i++){
-            for(j=0; j<3; j++){
-                cout<<calc[i][j]<<" ";
-            }
-            cout<<endl;
+    //Imprimir vector
+    for(i=0; i<5; i++){
+        for(j=0; j<3; j++){
+            cout<<calc[i][j]<<" ";
         }
+        cout<<endl;
+    }
 
     return 0;
 }
